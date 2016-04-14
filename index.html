@@ -89,7 +89,12 @@
 			height: 100%;
 			width:auto;
 		}
-		
+		.animate-fade {
+		   -webkit-animation: fadeAnimation 15s infinite;
+		   -moz-animation: fadeAnimation 15s infinite;
+		   -o-animation: fadeAnimation 15s infinite;
+			animation: fadeAnimation 15s infinite;
+		}
 		@keyframes fadeAnimation {
 		  0%   { opacity:0; }
 		  15%   { opacity:0; }
@@ -126,11 +131,12 @@
 		  to { opacity:0; }
 		  -webkit-animation-timing-function: linear;
 		}
-		.animate-fade {
-		   -webkit-animation: fadeAnimation 15s infinite;
-		   -moz-animation: fadeAnimation 15s infinite;
-		   -o-animation: fadeAnimation 15s infinite;
-			animation: fadeAnimation 15s infinite;
+			}
+		.animate-fadeTitle {
+		   -webkit-animation: fadeTitle 15s infinite;
+		   -moz-animation: fadeTitle 15s infinite;
+		   -o-animation: fadeTitle 15s infinite;
+			animation: fadeTitle 15s infinite;
 		}
 		@keyframes fadeTitle {
 		  0%   { opacity:0; }
@@ -159,12 +165,12 @@
 		  90%  { opacity:1; }
 		  to  { opacity:0; }
 		  -webkit-animation-timing-function: linear;
-		}
-		.animate-fadeTitle {
-		   -webkit-animation: fadeTitle 15s infinite;
-		   -moz-animation: fadeTitle 15s infinite;
-		   -o-animation: fadeTitle 15s infinite;
-			animation: fadeTitle 15s infinite;
+		.animate-fadeButton {
+
+		   -webkit-animation: fadeButton 15s infinite;
+		   -moz-animation: fadeButton 15s infinite;
+		   -o-animation: fadeButton 15s infinite;
+			animation: fadeButton 15s infinite;	
 		}
 @keyframes fadeButton {
 		  0%   { opacity:0; }
@@ -198,13 +204,14 @@
 		  to { opacity:0; }
 		  -webkit-animation-timing-function: linear;
 		}
-		.animate-fadeButton {
-
-		   -webkit-animation: fadeButton 15s infinite;
-		   -moz-animation: fadeButton 15s infinite;
-		   -o-animation: fadeButton 15s infinite;
-			animation: fadeButton 15s infinite;	
+			.animate-fadeStars {
+			opacity:1;
+		   -webkit-animation: fadeStars 15s infinite;
+		   -moz-animation: fadeStars 15s infinite;
+		   -o-animation: fadeStars 15s infinite;
+			animation: fadeStars 15s infinite;
 		}
+	
 				@keyframes fadeStars {
 			0%   { opacity:0;}
 			20%   {opacity:1;}
@@ -248,13 +255,7 @@
 		  }
 		  -webkit-animation-timing-function: linear;
 		}
-		.animate-fadeStars {
-			opacity:1;
-		   -webkit-animation: fadeStars 15s infinite;
-		   -moz-animation: fadeStars 15s infinite;
-		   -o-animation: fadeStars 15s infinite;
-			animation: fadeStars 15s infinite;
-		}
+	
 	</style>
 </head>
 <body>
