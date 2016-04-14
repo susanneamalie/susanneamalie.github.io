@@ -125,8 +125,8 @@
 		  25%  { opacity:1; }
 		  55%  { opacity:1; }
 		  70% { opacity:0; }
-		  100% { opacity:0; }
-		  animation-timing-function: linear;
+		  to { opacity:0; }
+		  -webkit-animation-timing-function: linear;
 		}
 		.animate-fade {
 		   -webkit-animation: fadeAnimation 15s infinite;
@@ -159,8 +159,8 @@
 		    0%   { opacity:0; }
 		  65%   { opacity:0; }
 		  90%  { opacity:1; }
-		  100%  { opacity:0; }
-		  animation-timing-function: linear;
+		  to  { opacity:0; }
+		  -webkit-animation-timing-function: linear;
 		}
 		.animate-fadeTitle {
 		   -webkit-animation: fadeTitle 15s infinite;
@@ -197,8 +197,8 @@
 		  25%   { opacity:0; }
 		  35%  { opacity:1; }
 		  90% { opacity:1; }
-		  100% { opacity:0; }
-		  animation-timing-function: linear;
+		  to { opacity:0; }
+		  -webkit-animation-timing-function: linear;
 		}
 		.animate-fadeButton {
 		   -webkit-animation: fadeButton 15s infinite;
@@ -243,12 +243,11 @@
 			0%   { opacity:0;}
 			20%   {opacity:1;}
 			80%  {opacity:1;}
-			100% { 
+			to { 
 				opacity:0; 
 				transform: scale3d(3,3,3);
-				animation-timing-function: linear;
 		  }
-		  animation-timing-function: linear;
+		  -webkit-animation-timing-function: linear;
 		}
 		.animate-fadeStars {
 		   -webkit-animation: fadeStars 15s infinite;
