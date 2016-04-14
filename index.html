@@ -3,10 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<style type="text/css">
+
 		body {
 			width: 620px;
 			height: 160px;
 			margin: 0px;
+            display: block;
 			
 		}
 		#contentWrapper {
@@ -69,7 +71,6 @@
 			/* IE */
 			-moz-opacity: 0.5;
 			/* Mozilla */
-			
 		}
 	
 			
@@ -116,7 +117,7 @@
 		   -webkit-animation: fadeButton 15s infinite;
 		   -moz-animation: fadeButton 15s infinite;
 		   -o-animation: fadeButton 15s infinite;
-			animation: fadeButton 15s infinite;	
+			animation: fadeButton 15s infinite;
 		}
 		@keyframes fadeAnimation {
 		  0%   { opacity:0; }
@@ -125,15 +126,14 @@
 		  55%  { opacity:1; }
 		  70% { opacity:0; }
 		  100% { opacity:0; }
-		  animation-timing-function: linear;
 		}
 		@-o-keyframes fadeAnimation{
-		 0%   { opacity:0; }
-		  15%   { opacity:0; }
-		  25%  { opacity:1; }
-		  55%  { opacity:1; }
+		  0%{ opacity:0; }
+		  15% { opacity:0; }
+		  25% { opacity:1; }
+		  55% { opacity:1; }
 		  70% { opacity:0; }
-		  100% { opacity:0; }
+		  100%{ opacity:0; }
 		  animation-timing-function: linear;
 		}
 		@-moz-keyframes fadeAnimation{
@@ -152,7 +152,6 @@
 		  55%  { opacity:1; }
 		  70% { opacity:0; }
 		  100% { opacity:0; }
-		  -webkit-animation-timing-function: linear;
 		}
 
 
@@ -161,7 +160,6 @@
 		  65%   { opacity:0; }
 		  90%  { opacity:1; }
 		  100%  { opacity:0; }
-		  animation-timing-function: linear;
 		}
 		@-o-keyframes fadeTitle{
 		   0%   { opacity:0; }
@@ -182,7 +180,6 @@
 		  65%   { opacity:0; }
 		  90%  { opacity:1; }
 		  100%  { opacity:0; }
-		  -webkit-animation-timing-function: linear;
 		}
 
 	
@@ -192,7 +189,6 @@
 		  35%  { opacity:1; }
 		  90% { opacity:1; }
 		  100% { opacity:0; }
-		  animation-timing-function: linear;
 		}
 		@-o-keyframes fadeButton{
 		  0%   { opacity:0; }
@@ -200,7 +196,6 @@
 		  35%  { opacity:1; }
 		  90% { opacity:1; }
 		  100% { opacity:0; }
-		  animation-timing-function: linear;
 		}
 		@-moz-keyframes fadeButton{
 		  0%   { opacity:0; }
@@ -216,11 +211,10 @@
 		  35%  { opacity:1; }
 		  90% { opacity:1; }
 		  100% { opacity:0; }
-		  -webkit-animation-timing-function: linear;
 		}
 
 	
-				@keyframes fadeStars {
+        @keyframes fadeStars {
 			0%   { opacity:0;}
 			20%   {opacity:1;}
 			80%  {opacity:1;}
@@ -229,7 +223,6 @@
 				transform: scale3d(3,3,3);
 				animation-timing-function: linear;
 		  }
-		  animation-timing-function: linear;
 		}
 		@-o-keyframes fadeStars{
 			0%   { opacity:0;}
@@ -240,7 +233,6 @@
 				transform: scale3d(3,3,3);
 				animation-timing-function: linear;
 		  }
-		  animation-timing-function: linear;
 		}
 		@-moz-keyframes fadeStars{
 		  0%   { opacity:0;}
@@ -273,7 +265,7 @@
 <div id="contentWrapper">
 
 	<div id="starAnim" class = "animate-fadeStars">
-	<img src="starsSmall.png" alt="Stars">;
+	<img src="starsSmall.png" alt="Stars">
 	</div>
 	
 	<div id="adText" class="animate-fadeTitle ">
