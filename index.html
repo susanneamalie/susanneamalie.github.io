@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<style type="text/css">
 		body {
-			width: 320px;
+			width: 620px;
 			height: 160px;
 			margin: 0px;
 			
@@ -58,7 +58,7 @@
 				top:25%;
 				width: 80%;
 		}
-		#ctnButton{
+		#ctaButton{
 			position:absolute;
 			margin: auto;
 			left: 26%;
@@ -69,7 +69,9 @@
 			/* IE */
 			-moz-opacity: 0.5;
 			/* Mozilla */
+			
 		}
+	
 			
 		#opac{
 			filter: alpha(opacity=100);
@@ -128,10 +130,10 @@
 		  25%  { opacity:1; }
 		  55%  { opacity:1; }
 		  70% { opacity:0; }
-		  to { opacity:0; }
+		  100% { opacity:0; }
 		  -webkit-animation-timing-function: linear;
 		}
-			}
+
 		.animate-fadeTitle {
 		   -webkit-animation: fadeTitle 15s infinite;
 		   -moz-animation: fadeTitle 15s infinite;
@@ -163,10 +165,11 @@
 		    0%   { opacity:0; }
 		  65%   { opacity:0; }
 		  90%  { opacity:1; }
-		  to  { opacity:0; }
+		  100%  { opacity:0; }
 		  -webkit-animation-timing-function: linear;
-		.animate-fadeButton {
+		}
 
+				.animate-fadeButton {
 		   -webkit-animation: fadeButton 15s infinite;
 		   -moz-animation: fadeButton 15s infinite;
 		   -o-animation: fadeButton 15s infinite;
@@ -201,17 +204,16 @@
 		  25%   { opacity:0; }
 		  35%  { opacity:1; }
 		  90% { opacity:1; }
-		  to { opacity:0; }
+		  100% { opacity:0; }
 		  -webkit-animation-timing-function: linear;
 		}
-			.animate-fadeStars {
-			opacity:1;
+
+				.animate-fadeStars {
 		   -webkit-animation: fadeStars 15s infinite;
 		   -moz-animation: fadeStars 15s infinite;
 		   -o-animation: fadeStars 15s infinite;
 			animation: fadeStars 15s infinite;
 		}
-	
 				@keyframes fadeStars {
 			0%   { opacity:0;}
 			20%   {opacity:1;}
@@ -249,13 +251,14 @@
 			0%   { opacity:0;}
 			20%   {opacity:1;}
 			80%  {opacity:1;}
-			to { 
+			100% { 
 				opacity:0; 
 				transform: scale3d(3,3,3);
+				animation-timing-function: linear;
 		  }
 		  -webkit-animation-timing-function: linear;
 		}
-	
+
 	</style>
 </head>
 <body>
@@ -273,7 +276,7 @@
 	</div>
 	
 	<div id ="albumTitle" class="animate-fade">
-		<img src="http://res.cloudinary.com/dpvscq4fb/image/upload/v1460618170/Monica-Heldal_LogoSmall_sl8gti.png" id="titleImg" alt="Title">
+		<img src="http://res.cloudinary.com/dpvscq4fb/image/upload/v1460618170/Monica-Heldal_LogoSmall_sl8gti.png" id="titleImg">
 	</div>
 	<div id = "ctaButton" class="animate-fadeButton">
 		<h2 id ="opac">HØR ALBUMET HER </h2>
@@ -284,3 +287,5 @@
 
 </body>
 </html>
+</head>
+<body>
