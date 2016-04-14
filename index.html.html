@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body {
+			width: 620px;
+			height: 160px;
+			margin: 0px;
+			
+		}
+		#contentWrapper {
+			position: absolute;
+			width:320px;
+			height: 160px;
+			background-image: url("CoverSmall-compressed.jpg");
+			color: white;
+			overflow:hidden;
+		}
+		
+		h1{
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: normal;
+			font-size:25px;
+			margin-top:15%;
+			padding:5px;
+			text-align:center;
+		
+		}
+		h2{
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: normal	;
+			font-size:13px;
+			text-align: center;
+			margin:0px;
+		
+		}
+		.bold {
+			font-weight: bold;
+		}
+		
+		#adText{
+			position:absolute;
+			height:100%;
+			width: 100%;
+			margin: auto;
+			
+		}
+		#albumTitle{
+			position:absolute;
+			height:100%;
+			width: 100%;
+			margin:auto;
+		}
+		#albumTitle img{
+				position:absolute;
+				left:9%;
+				top:25%;
+				width: 80%;
+		}
+		#ctaButton{
+			position:absolute;
+			margin: auto;
+			left: 26%;
+			top:70%;
+			padding:10px;  background: #CCC;
+			background-color: rgba(255,131,15,0.5);
+			filter: alpha(opacity=50);
+			/* IE */
+			-moz-opacity: 0.5;
+			/* Mozilla */
+			
+		}
+	
+			
+		#opac{
+			filter: alpha(opacity=100);
+			/* IE */
+			-moz-opacity: 1;
+			/* Mozilla */
+			opacity: 1;
+			/* CSS3 */
+		}
+		#starAnim{
+			position: absolute;
+			width: 320px;
+			height: 250px;
+		}
+		#starAnim img{
+			position: absolute;
+			height: 100%;
+			width:auto;
+		}
+		
+		@keyframes fadeAnimation {
+		  0%   { opacity:0; }
+		  15%   { opacity:0; }
+		  25%  { opacity:1; }
+		  55%  { opacity:1; }
+		  70% { opacity:0; }
+		  100% { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-o-keyframes fadeAnimation{
+		 0%   { opacity:0; }
+		  15%   { opacity:0; }
+		  25%  { opacity:1; }
+		  55%  { opacity:1; }
+		  70% { opacity:0; }
+		  100% { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-moz-keyframes fadeAnimation{
+		  0%   { opacity:0; }
+		  15%   { opacity:0; }
+		  25%  { opacity:1; }
+		  55%  { opacity:1; }
+		  70% { opacity:0; }
+		  100% { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-webkit-keyframes fadeAnimation{
+		  0%   { opacity:0; }
+		  15%   { opacity:0; }
+		  25%  { opacity:1; }
+		  55%  { opacity:1; }
+		  70% { opacity:0; }
+		  100% { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		.animate-fade {
+		   -webkit-animation: fadeAnimation 15s infinite;
+		   -moz-animation: fadeAnimation 15s infinite;
+		   -o-animation: fadeAnimation 15s infinite;
+			animation: fadeAnimation 15s infinite;
+		}
+		@keyframes fadeTitle {
+		  0%   { opacity:0; }
+		  65%   { opacity:0; }
+		  90%  { opacity:1; }
+		  100%  { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-o-keyframes fadeTitle{
+		   0%   { opacity:0; }
+		  65%   { opacity:0; }
+		  90%  { opacity:1; }
+		  100%  { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-moz-keyframes fadeTitle{
+		    0%   { opacity:0; }
+		  65%   { opacity:0; }
+		  90%  { opacity:1; }
+		  100%  { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-webkit-keyframes fadeTitle{
+		    0%   { opacity:0; }
+		  65%   { opacity:0; }
+		  90%  { opacity:1; }
+		  100%  { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		.animate-fadeTitle {
+		   -webkit-animation: fadeTitle 15s infinite;
+		   -moz-animation: fadeTitle 15s infinite;
+		   -o-animation: fadeTitle 15s infinite;
+			animation: fadeTitle 15s infinite;
+		}
+@keyframes fadeButton {
+		  0%   { opacity:0; }
+		  25%   { opacity:0; }
+		  35%  { opacity:1; }
+		  90% { opacity:1; }
+		  100% { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-o-keyframes fadeButton{
+		  0%   { opacity:0; }
+		  25%   { opacity:0; }
+		  35%  { opacity:1; }
+		  90% { opacity:1; }
+		  100% { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-moz-keyframes fadeButton{
+		  0%   { opacity:0; }
+		  25%   { opacity:0; }
+		  35%  { opacity:1; }
+		  90% { opacity:1; }
+		  100% { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		@-webkit-keyframes fadeButton{
+		  0%   { opacity:0; }
+		  25%   { opacity:0; }
+		  35%  { opacity:1; }
+		  90% { opacity:1; }
+		  100% { opacity:0; }
+		  animation-timing-function: linear;
+		}
+		.animate-fadeButton {
+		   -webkit-animation: fadeButton 15s infinite;
+		   -moz-animation: fadeButton 15s infinite;
+		   -o-animation: fadeButton 15s infinite;
+			animation: fadeButton 15s infinite;	
+		}
+				@keyframes fadeStars {
+			0%   { opacity:0;}
+			20%   {opacity:1;}
+			80%  {opacity:1;}
+			100% { 
+				opacity:0; 
+				transform: scale3d(3,3,3);
+				animation-timing-function: linear;
+		  }
+		  animation-timing-function: linear;
+		}
+		@-o-keyframes fadeStars{
+			0%   { opacity:0;}
+			20%   {opacity:1;}
+			80%  {opacity:1;}
+			100% { 
+				opacity:0; 
+				transform: scale3d(3,3,3);
+				animation-timing-function: linear;
+		  }
+		  animation-timing-function: linear;
+		}
+		@-moz-keyframes fadeStars{
+		  0%   { opacity:0;}
+			20%   {opacity:1;}
+			80%  {opacity:1;}
+			100% { 
+				opacity:0; 
+				transform: scale3d(3,3,3);
+				animation-timing-function: linear;
+		  }
+		  animation-timing-function: linear;
+		}
+		@-webkit-keyframes fadeStars{
+			0%   { opacity:0;}
+			20%   {opacity:1;}
+			80%  {opacity:1;}
+			100% { 
+				opacity:0; 
+				transform: scale3d(3,3,3);
+				animation-timing-function: linear;
+		  }
+		  animation-timing-function: linear;
+		}
+		.animate-fadeStars {
+		   -webkit-animation: fadeStars 15s infinite;
+		   -moz-animation: fadeStars 15s infinite;
+		   -o-animation: fadeStars 15s infinite;
+			animation: fadeStars 15s infinite;
+		}
+	</style>
+</head>
+<body>
+
+<a href= "https://MonicaHeldal.lnk.to/dIbBY">
+<div id="contentWrapper">
+
+	<div id="starAnim" class = "animate-fadeStars">
+	<img src="starsSmall.png" alt="Stars">;
+	</div>
+	
+	<div id="adText" class="animate-fadeTitle ">
+		<h1> NYTT ALBUM UTE NÅ
+		</h1>
+	</div>
+	
+	<div id ="albumTitle" class="animate-fade">
+		<img src="Monica-Heldal_logoSmall.png" id="titleImg">
+	</div>
+	<div id = "ctaButton" class="animate-fadeButton">
+		<h2 id ="opac">HØR ALBUMET HER </h2>
+	</div>
+
+</div> 
+</a>
+
+</body>
+</html>
